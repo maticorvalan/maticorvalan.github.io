@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/iconohotel - copia.jpg">
+    <title>Hoteles Argentinos</title>
+</head>
+<body>
+    <section class="header">
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="Destinos.html">Destinos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="logo-texto">
+            <img src="images/iconohotel.jfif" alt="ICONOHOTEL" class="icono">
+            <p id="texhotel">hoteles argentinos</p>
+        </div>
+    </section>
+    <section id="maincontacto">
+        <div class="row">
+            <h2>Contactate con nosotros!</h2>
+        </div>
+        <div class="row contacto-content">
+            <div class="contactoimg">
+                <img src="images/icono-contacto.svg" alt="Imagen">
+            </div>
+            <div class="formulariocontacto">
+                <form name="formulario" action="" novalidate onsubmit="return validar()">
+                    <input id="nombre" class="formularioItem" name="name" type="text" placeholder="Nombre y Apellido *" autofocus>
+                    
+                    <input id="telefono" class="formularioItem" name="cel" type="tel" placeholder="Telefono * (Ej:2657507673) ">
+
+                    <input id="email" class="formularioItem" name="mail" type="email" placeholder="Correo Electronico">
+
+                    <input id="localidad" class="formularioItem" name="local" type="text" placeholder="Localidad">
+
+                    <textarea maxlength="350" class="formularioItem" name="msj" id="mensaje" placeholder="Mensaje *"></textarea>
+
+                    <button class="btnenviar">Enviar</button>
+                </form>              
+            </div>
+        </div>
+    </section>
+    <div id="debajoFormulario">
+        <h2 style="display: none;" id="info">Informacion del Cliente</h2>
+        <div id="resultado"></div>   
+    </div>
+    <section class="footer">
+        <ul class="hotelfooter">
+            <li>Hoteles</li>
+            <a href="index.html">Inicio</a>
+            <a href="Destinos.html">Destinos</a>
+            <a href="contacto.html">Contacto</a>
+        </ul>
+        <ul class="politicas">
+            <li>Legales</li>
+            <a href="https://copipeso.com/wp-content/uploads/2020/11/T%C3%A9rminos-y-Condiciones.png">Términos y condiciones</a>
+        </ul>
+        <ul class="redes">
+            <li>Seguinos</li>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="">Facebook</a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instragram">Instagram</a>
+            <a href="https://www.youtube.com"><img src="images/youtube.png" alt="">Youtube</a>
+        </ul>
+        <ul class="apps">
+            <li>Descargá la aplicación</li>
+            <a href="https://www.apple.com/la/app-store/"><img src="images/appStore.svg" alt="AppStore"></a>
+            <a href="https://play.google.com/"><img src="images/googlePlay.svg" alt="GooglePlay"></a>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
